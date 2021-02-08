@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,11 @@
 		09418F3225CD881300660315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F3125CD881300660315 /* ContentView.swift */; };
 		09418F3425CD881500660315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09418F3325CD881500660315 /* Assets.xcassets */; };
 		09418F3725CD881500660315 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09418F3625CD881500660315 /* Preview Assets.xcassets */; };
+		09418F4125CD887100660315 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F4025CD887100660315 /* Image.swift */; };
+		09418F4625CD89D500660315 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F4525CD89D500660315 /* Home.swift */; };
+		09418F4A25CD8A7700660315 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 09418F4925CD8A7700660315 /* SDWebImageSwiftUI */; };
+		09418F4D25CD8AA200660315 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F4C25CD8AA200660315 /* ScrollableTabBar.swift */; };
+		09418F5125D15C4900660315 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F5025D15C4900660315 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,10 @@
 		09418F3325CD881500660315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09418F3625CD881500660315 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09418F3825CD881500660315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09418F4025CD887100660315 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		09418F4525CD89D500660315 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		09418F4C25CD8AA200660315 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
+		09418F5025D15C4900660315 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09418F4A25CD8A7700660315 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +62,8 @@
 		09418F2E25CD881300660315 /* ScrollableTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				09418F4425CD89CF00660315 /* View */,
+				09418F3F25CD886900660315 /* Model */,
 				09418F2F25CD881300660315 /* ScrollableTabBarApp.swift */,
 				09418F3125CD881300660315 /* ContentView.swift */,
 				09418F3325CD881500660315 /* Assets.xcassets */,
@@ -67,6 +79,24 @@
 				09418F3625CD881500660315 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09418F3F25CD886900660315 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09418F4025CD887100660315 /* Image.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09418F4425CD89CF00660315 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09418F4525CD89D500660315 /* Home.swift */,
+				09418F4C25CD8AA200660315 /* ScrollableTabBar.swift */,
+				09418F5025D15C4900660315 /* TabBar.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +115,9 @@
 			dependencies = (
 			);
 			name = ScrollableTabBar;
+			packageProductDependencies = (
+				09418F4925CD8A7700660315 /* SDWebImageSwiftUI */,
+			);
 			productName = ScrollableTabBar;
 			productReference = 09418F2C25CD881300660315 /* ScrollableTabBar.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 09418F2325CD881300660315;
+			packageReferences = (
+				09418F4825CD8A7700660315 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 09418F2D25CD881300660315 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				09418F3225CD881300660315 /* ContentView.swift in Sources */,
+				09418F4125CD887100660315 /* Image.swift in Sources */,
+				09418F4D25CD8AA200660315 /* ScrollableTabBar.swift in Sources */,
+				09418F5125D15C4900660315 /* TabBar.swift in Sources */,
+				09418F4625CD89D500660315 /* Home.swift in Sources */,
 				09418F3025CD881300660315 /* ScrollableTabBarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09418F4825CD8A7700660315 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09418F4925CD8A7700660315 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09418F4825CD8A7700660315 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09418F2425CD881300660315 /* Project object */;
 }
